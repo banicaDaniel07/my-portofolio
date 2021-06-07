@@ -1,0 +1,39 @@
+.home {
+  position: relative;
+  height: calc(100vh - var(--px100));
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(17, 17, 17, 0.7) 0%,
+      rgba(17, 17, 17, 0.8) 50%,
+      rgba(17, 17, 17, 0.7) 100%
+    ),
+    url("../../assets/pc.jpg");
+
+  &__container {
+    position: absolute;
+    top: calc(50% - var(--px50));
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__title {
+    font-size: var(--px70);
+    font-weight: var(--weight400);
+    font-family: var(--fam-Sans);
+    margin-bottom: var(--px30);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: var(--px40);
+    font-weight: var(--weight300);
+    letter-spacing: 20px;
+    text-transform: uppercase;
+  }
+}
