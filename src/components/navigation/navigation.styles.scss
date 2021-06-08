@@ -1,6 +1,6 @@
 .nav {
   max-width: var(--px1500);
-  height: 100px;
+  height: var(--px80);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,12 +8,13 @@
   padding: 0 var(--px10);
 
   &__logo {
-    height: var(--px80);
+    height: var(--px70);
+    opacity: 0.9;
   }
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(194, 194, 194);
     font-family: var(--fam-Poppins);
     font-size: var(--px18);
     line-height: var(--px100);
@@ -28,7 +29,8 @@
   }
 
   a:hover {
-    color: #e67e22;
+    color: var(--orange);
+    // color: #e67e22;
     transition: all 0.2s ease-in-out;
   }
 }
