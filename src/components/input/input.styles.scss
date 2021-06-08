@@ -1,0 +1,53 @@
+.input {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  border-radius: var(--px31);
+  margin: 0 auto var(--px16);
+  z-index: 1;
+
+  &__type {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: var(--white-dark);
+    border-radius: 31px;
+    font-family: "Ubuntu";
+    font-weight: var(--weight700);
+    font-size: var(--px18);
+    color: var(--grey);
+    line-height: var(--px18);
+    height: var(--px62);
+    padding: 0 var(--px35);
+    outline: none;
+    border: none;
+  }
+
+  &__type::placeholder {
+    color: var(--grey);
+  }
+
+  &__span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: var(--px31);
+    background-color: #fff;
+    pointer-events: none;
+    transition: all 0.4s;
+  }
+
+  &__type:focus + &__span {
+    width: calc(100% + 20px);
+  }
+}
+
+textarea {
+  min-height: 169px;
+  padding: 19px 35px 0 !important;
+}

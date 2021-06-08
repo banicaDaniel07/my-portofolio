@@ -12,21 +12,38 @@ body {
   // background-color: #101820ff;
 }
 :root {
+  // COLORS
+  --white-dark: #f4f4f4;
   --white: #fff;
   --dark: #101820ff;
   --orange: #f2aa4cff;
+  --grey: #8f8fa1;
+
+  // FONT-FAMILY
   --fam-Roboto: "Roboto", sans-serif;
   --fam-Sans: "Open-Sans", sans-serif;
   --fam-Poppins: "Poppins", sans-serif;
+  --fam-Ubuntu: "Ubuntu", sans-serif;
+
+  // SIZES
   --px10: 0.625rem;
+  --px16: 1rem;
   --px18: 1.125rem;
   --px30: 1.875rem;
+  --px31: 1.9375rem;
+  --px35: 2.1875rem;
   --px40: 2.5rem;
   --px50: 3.125rem;
+  --px62: 3.875rem;
   --px70: 4.375rem;
   --px80: 5rem;
   --px100: 6.25rem;
   --px1500: 93.75rem;
+
+  // FONT-WEIGHT
   --weight300: 300;
   --weight400: 400;
+  --weight500: 500;
+  --weight600: 600;
+  --weight700: 700;
 }

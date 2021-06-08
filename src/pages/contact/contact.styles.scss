@@ -1,0 +1,26 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  height: 837px;
+  background: linear-gradient(
+    to bottom,
+    rgba(22, 22, 22, 1) 0%,
+    rgba(22, 22, 22, 0.9) 10%,
+    rgba(22, 22, 22, 0.6) 100%
+  );
+  background-color: var(--grey);
+
+  &__title {
+    text-align: center;
+    font-size: var(--px30);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: var(--px50);
+    letter-spacing: 0.2rem;
+  }
+
+  form {
+    width: 550px;
+  }
+}
