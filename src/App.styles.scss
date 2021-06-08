@@ -15,9 +15,12 @@ body {
   // COLORS
   --white-dark: #f4f4f4;
   --white: #fff;
-  --dark: #101820ff;
+  --dark: #161616;
+  --dark-f: #202020;
   --orange: #f2aa4cff;
+  --orange-d: #a37231;
   --grey: #8f8fa1;
+  --grey-d: #272727;
 
   // FONT-FAMILY
   --fam-Roboto: "Roboto", sans-serif;
@@ -27,8 +30,10 @@ body {
 
   // SIZES
   --px10: 0.625rem;
+  --px14: 0.875rem;
   --px16: 1rem;
   --px18: 1.125rem;
+  --px22: 1.375rem;
   --px30: 1.875rem;
   --px31: 1.9375rem;
   --px35: 2.1875rem;

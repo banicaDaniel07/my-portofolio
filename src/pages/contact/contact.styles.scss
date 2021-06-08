@@ -3,70 +3,187 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
   // height: calc(100vh - 80px);
-  background: linear-gradient(
-    to bottom,
-    rgba(22, 22, 22, 1) 0%,
-    rgba(22, 22, 22, 0.9) 10%,
-    rgba(22, 22, 22, 0.6) 100%
-  );
-  background-color: var(--grey);
+  // background: linear-gradient(
+  //   to bottom,
+  //   rgba(22, 22, 22, 1) 0%,
+  //   rgba(22, 22, 22, 0.9) 10%,
+  //   rgba(22, 22, 22, 0.6) 100%
+  // );
+  background-color: var(--dark);
 
-  &__title {
+  // Contact page city image
+  &__landscape {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(
+        to bottom,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(22, 22, 22, 0.6) 15%,
+        rgba(22, 22, 22, 0.6) 85%,
+        rgba(22, 22, 22, 0.8) 90%,
+        rgba(22, 22, 22, 1) 100%
+      ),
+      url("../../assets/landscape.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // City image text
+  &__center {
     text-align: center;
-    font-size: var(--px30);
+    font-size: var(--px100);
     text-transform: uppercase;
     display: block;
     margin-bottom: var(--px50);
     letter-spacing: 0.2rem;
+    text-shadow: 2px 2px 6px black;
+    padding: 10px 14px;
+    opacity: 0.15;
+  }
+
+  // First orange text
+  &__subtitle {
+    margin: 70px 0;
+    text-align: center;
+    font-family: var(--fam-Roboto);
+    font-style: italic;
+    font-size: var(--px30);
+    font-weight: var(--weight400);
+    color: var(--orange);
+    letter-spacing: 0.2rem;
+  }
+
+  // Contact infos 3 columns grid
+  &__infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info {
+    width: 360px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      text-transform: uppercase;
+      font-size: var(--px16);
+      font-weight: var(--weight500);
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: var(--px14);
+      color: var(--white-dark);
+      letter-spacing: 0.1rem;
+      font-weight: var(--weight300);
+    }
+
+    i {
+      font-size: var(--px30);
+      color: var(--orange);
+      margin-bottom: 15px;
+    }
+  }
+
+  .info:not(:nth-child(3)) {
+    border-right: 2px solid var(--orange);
+  }
+
+  // Form Text
+  &__title {
+    text-align: center;
+    font-size: var(--px16);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: var(--px50);
+    letter-spacing: 0.2rem;
+    margin-top: 100px;
+    line-height: var(--px30);
+    color: var(--grey);
   }
 
   form {
-    width: 550px;
+    width: 700px;
   }
 
-  &__cv {
-    position: relative;
-    margin-top: 100px;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 13px 19px 13px 18px;
-    border: 1px solid var(--white);
-    border-radius: 10px;
-    margin-left: 90vw;
-    margin-bottom: 37px;
+  // Social Text
+  &__connect {
+    margin: 120px 0 70px;
+    text-align: center;
+    font-family: var(--fam-Roboto);
+    font-style: italic;
+    font-size: var(--px30);
+    font-weight: var(--weight400);
+    color: var(--orange);
+    letter-spacing: 0.2rem;
   }
 
-  &__cv:hover {
-    background-color: var(--grey);
-  }
-
-  &__footer {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: red;
-  }
-
-  &__name {
-    margin-bottom: 20px;
-  }
-
+  // Social 4 columns grid
   &__social {
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr 4fr;
+    width: 26%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-bottom: 100px;
+    a {
+      text-decoration: none;
+    }
   }
 
-  &__icons {
-    box-sizing: border-box;
-    margin-right: 30px;
+  // Each social icon div
+  &__content {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    i {
+      font-size: var(--px30);
+      color: var(--dark);
+      transition: all 0.2s ease-in-out;
+    }
   }
 
-  &__icons:first-child {
-    margin-left: 105px;
+  &__content:hover {
+    background-color: var(--orange-d);
+    transition: all 0.2s ease-in-out;
+    i {
+      color: var(--white-dark);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  // Last social icon
+  .fa-folder-open {
+    margin-left: 3px;
+  }
+
+  // Footer
+  footer {
+    width: 100%;
+    height: 60px;
+    background-color: var(--dark-f);
+    text-align: center;
+    letter-spacing: 0.15rem;
+    h1 {
+      color: var(--white-dark);
+      font-size: var(--px14);
+      font-weight: var(--weight300);
+      line-height: 60px;
+    }
   }
 }

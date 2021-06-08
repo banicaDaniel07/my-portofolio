@@ -1,7 +1,7 @@
 .input {
   position: relative;
   width: 100%;
-  background-color: var(--white-dark);
+  background-color: var(--grey-d);
   border-radius: var(--px31);
   margin: 0 auto var(--px16);
   z-index: 1;
@@ -10,7 +10,7 @@
     position: relative;
     display: block;
     width: 100%;
-    background: var(--white-dark);
+    background: var(--grey-d);
     border-radius: 31px;
     font-family: "Ubuntu";
     font-weight: var(--weight700);
@@ -24,7 +24,7 @@
   }
 
   &__type::placeholder {
-    color: var(--grey);
+    color: var(--white-dark);
   }
 
   &__span {
@@ -37,7 +37,7 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: var(--px31);
-    background-color: var(--white-dark);
+    background-color: var(--grey-d);
     pointer-events: none;
     transition: all 0.4s;
   }

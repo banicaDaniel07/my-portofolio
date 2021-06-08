@@ -1,11 +1,19 @@
 .nav {
-  max-width: var(--px1500);
+  position: sticky;
+  top: 0;
+  width: 100%;
   height: var(--px80);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 var(--px10);
+  z-index: 100;
+  background-color: rgba(22, 22, 22, 0.8);
+
+  &__container {
+    width: var(--px1500);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
 
   &__logo {
     height: var(--px70);
