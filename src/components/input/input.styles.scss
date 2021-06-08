@@ -1,7 +1,7 @@
 .input {
   position: relative;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white-dark);
   border-radius: var(--px31);
   margin: 0 auto var(--px16);
   z-index: 1;
@@ -37,7 +37,7 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: var(--px31);
-    background-color: #fff;
+    background-color: var(--white-dark);
     pointer-events: none;
     transition: all 0.4s;
   }
@@ -50,4 +50,5 @@
 textarea {
   min-height: 169px;
   padding: 19px 35px 0 !important;
+  resize: none;
 }
