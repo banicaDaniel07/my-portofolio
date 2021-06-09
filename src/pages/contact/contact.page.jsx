@@ -67,7 +67,7 @@ const ContactPage = () => {
             </a>
             </div>
             <footer>
-                <h1>&copy;{year}. Banica Daniel. All Rights Reserved.</h1>
+                <h1>Created by Banica Daniel, &copy; {year}</h1>
             </footer>
         </div>
     )
