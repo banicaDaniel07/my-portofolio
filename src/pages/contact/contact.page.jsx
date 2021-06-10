@@ -17,17 +17,17 @@ const ContactPage = () => {
                 <h2 className="contact__subtitle">Get in touch with me!</h2>
                 <div className="contact__infos">
                     <div className="contact__phone info">
-                    <i class="fas fa-mobile-alt"></i>
+                    <i className="fas fa-mobile-alt"></i>
                         <span>Phone</span>
                         <p>phone 0736 533 401</p>
                     </div>
                     <div className="contact__adrress info">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i className="fas fa-map-marker-alt"></i>
                         <span>Adrress</span>
                         <p>Galati,  Romania</p>
                     </div>
                     <div className="contact__email info">
-                    <i class="fas fa-envelope"></i>
+                    <i className="fas fa-envelope"></i>
                         <span>Email</span>
                         <p>banica.daniel07@gmail.com</p>
                     </div>
@@ -46,23 +46,23 @@ const ContactPage = () => {
             <div className="contact__social">
             <a className='contact__cv' href="https://www.google.com" target="_blank" rel="noreferrer">
                 <div className="contact__content">
-                    <i class="fab fa-facebook-f"></i>
+                    <i className="fab fa-facebook-f"></i>
                 </div>
             </a>
             <a className='contact__cv' href="https://www.google.com" target="_blank" rel="noreferrer">  
                 <div className="contact__content">
-                    <i class="fab fa-github"></i>
+                    <i className="fab fa-github"></i>
                 </div>
             </a>
             <a className='contact__cv' href="https://www.google.com" target="_blank" rel="noreferrer">
                 <div className="contact__content">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i className="fab fa-linkedin-in"></i>
                 </div>
             </a>
 
             <a className='contact__cv' href="https://www.google.com" target="_blank" rel="noreferrer">
                 <div className="contact__content">
-                    <i class="fas fa-folder-open"></i>
+                    <i className="fas fa-folder-open"></i>
                 </div>            
             </a>
             </div>

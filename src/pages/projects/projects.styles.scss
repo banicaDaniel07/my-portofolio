@@ -1,0 +1,49 @@
+.projects {
+  &__title {
+    margin: 70px 0;
+    text-align: center;
+    font-family: var(--fam-Roboto);
+    font-style: italic;
+    font-size: var(--px30);
+    font-weight: var(--weight400);
+    color: var(--orange);
+    letter-spacing: 0.2rem;
+  }
+
+  &__container {
+    width: 80%;
+    height: 1000px;
+    margin: 0 auto;
+  }
+
+  &__options {
+    width: fit-content;
+    display: flex;
+    justify-items: center;
+    margin: 0 auto;
+  }
+}
+
+.option__button {
+  font-size: var(--px25);
+  font-weight: var(--weight600);
+  font-style: italic;
+  padding: 7px 12px;
+  border: 2px solid var(--white-d);
+  border-radius: 10px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.option__button:hover {
+  background-color: var(--white-d);
+  color: var(--dark);
+}
+
+.projects__card {
+  width: 80%;
+  height: 900px;
+  margin: 50px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
