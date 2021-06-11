@@ -41,9 +41,11 @@
 }
 
 .projects__card {
-  width: 80%;
-  height: 900px;
-  margin: 50px auto 50px;
+  width: 1212px;
+  height: fit-content;
+  margin: 70px auto 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 30px;
 }

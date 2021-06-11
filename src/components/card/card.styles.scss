@@ -1,11 +1,91 @@
 .card {
+  position: relative;
   width: 384px;
   height: 216px;
-  background-color: red;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: rgba(17, 17, 17, 0.8);
+    cursor: pointer;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 15px rgba(243, 131, 26, 0.4);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__buttons {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__content {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin: 20px 0;
+    i {
+      font-size: var(--px25);
+      color: var(--dark);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &__content:hover {
+    background-color: var(--orange-d);
+    transition: all 0.2s ease-in-out;
+    i {
+      color: var(--white-dark);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &__name {
+    font-size: 1rem;
+    font-weight: var(--weight300);
+    color: var(--orange);
+    letter-spacing: 0.1rem;
+    margin-bottom: 30px;
+  }
+
+  &__responsive {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: var(--weight300);
+  }
+
+  &__red {
+    color: var(--red);
+  }
+
+  &__green {
+    color: var(--green);
   }
 }
