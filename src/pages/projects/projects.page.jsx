@@ -7,7 +7,7 @@ import './projects.styles.scss';
 const ProjectsPage = () => {
         const [projects] = useState(DATA_JSON);
         const [filtred, setFiltred] = useState(projects);
-        const [html, setHtml] = useState(false);
+        const [html] = useState(true);
         const [css, setCss] = useState(false);
         const [js, setJs] = useState(false);
         const [sass, setSass] = useState(false);
@@ -42,9 +42,9 @@ const ProjectsPage = () => {
 
         // useEffect( () => {filterProjects()},[html, css, js, sass, react] )
 
-        const renderHtml =  () => {
-             setHtml(!html);
-        }    
+        // const renderHtml =  () => {
+        //      setHtml(!html);
+        // }    
         const renderCss =  () => {
             setCss(!css);
         }    
@@ -62,9 +62,9 @@ const ProjectsPage = () => {
         
         useEffect(()=>{
             let newFilterArr = projects;
-            if(html === true){
-                newFilterArr = newFilterArr.filter(elem => elem.code.HTML === true);
-            }
+            // if(html === true){
+            //     newFilterArr = newFilterArr.filter(elem => elem.code.HTML === true);
+            // }
             if(css === true){
                 newFilterArr = newFilterArr.filter(elem => elem.code.CSS === true);
             }
@@ -85,7 +85,7 @@ const ProjectsPage = () => {
                 <h1 className="projects__title">My Projects</h1>
                 <div className="projects__container">
                     <div className="projects__options">
-                        <div onClick={renderHtml} className={`option__button ${html ? "button__active" : ""}`}>HTML</div>
+                        <div  className={`option__button ${html ? "button__active" : ""}`}>HTML</div>
                         <div onClick={renderCss} className={`option__button ${css ? "button__active" : ""}`}>CSS</div>
                         <div onClick={renderJs} className={`option__button ${js ? "button__active" : ""}`}>JS</div>
                         <div onClick={renderSass} className={`option__button ${sass ? "button__active" : ""}`}>SASS</div>

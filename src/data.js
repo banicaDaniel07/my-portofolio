@@ -5,7 +5,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://crwn-clothing-d.herokuapp.com/",
       "repository":"https://github.com/banicaDaniel07/crwn",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/pW7zF7F/crwn-clothing.jpg",
       "code":{
          "HTML":true,
          "CSS":false,
@@ -20,7 +20,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://forkify-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/forkify",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/w7yP4c4/forkify.jpg",
       "code":{
          "HTML":true,
          "CSS":false,
@@ -35,7 +35,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://bankist-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/bankist",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/YyG3NWs/bankist.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -50,7 +50,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://monsters-rolodex-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/monsters-rolodex",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/6Hhtrxw/monsters-rolodex.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -65,7 +65,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://first-to-100-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/pig-game",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/Jrn61Pq/first-to-100.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -80,7 +80,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://honor-landing-page-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/honor-landing-page",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/3WwRGw4/honor-smartwatch.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -95,7 +95,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://comfy-house-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/comfy-house",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/s97Xf2j/comfy-house.jpg",
       "code":{
          "HTML":true,
          "CSS":false,
@@ -110,7 +110,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://bee-it-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/calculator",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/2yvQftm/bee-it.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -125,7 +125,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://guess-my-number-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/guess-my-number",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/Lrt3QTb/guess-my-number.png",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -140,7 +140,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://netflix-landing-page-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/netflix-landing-page",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/zR7rbZW/netflix-landing-page.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -156,7 +156,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://capture-motion-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/capture-motion",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/wQPv6d0/capture-motion.jpg",
       "code":{
          "HTML":true,
          "CSS":false,
@@ -171,7 +171,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://bankist-arrays-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/bankist-arrays",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/sj7XQvY/bankist-array.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -186,7 +186,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://mapty-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/mapty",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/NxWshHp/mapty.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -201,7 +201,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://mulan-landing-page-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/mulan-landing-page",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/WxS8wnc/mulan-landing-page.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -216,7 +216,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://react-landing-page-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/react-landing-page",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/hDr1qL7/react-landing-page.jpg",
       "code":{
          "HTML":true,
          "CSS":false,
@@ -232,7 +232,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://waves-music-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/waves-music",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/bFnmcjc/waves-music.jpg",
       "code":{
          "HTML":true,
          "CSS":false,
@@ -247,7 +247,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://client-site-validation-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/client-site-validation",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/7yj9cKj/client-side-validation.png",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -262,7 +262,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://mmtuts-web-page-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/mmtuts-web-page",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/Zfhn7DG/my-first-responsive.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -277,7 +277,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://winter-collections-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/winter-web",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/T4mkqw7/winter-collections.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -292,7 +292,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://bubble-web-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/bubble-web",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/T4NnpZt/bubble-website.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -307,7 +307,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://my-gallery-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/my-gallery",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "Here",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -322,7 +322,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://calculator-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/calculator",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/wSWfjQm/my-gallery.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -337,7 +337,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://pepsi-landing-page-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/pepsi-landing-page",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/ZfV29K5/pepsi-landing-page.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -353,7 +353,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://new-year-countdown-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/new-year-countdown",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/9hxLgJR/countdown.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -368,13 +368,28 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://clock-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/clock",
-      "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+      "cover": "https://i.ibb.co/kqZvKSp/clock.png",
       "code":{
          "HTML":true,
          "CSS":true,
          "JS":true,
          "REACT":false,
          "SASS":false
+      }
+   },
+   {
+      "id":26,
+      "name":"Online Shop | React Basics",
+      "responsive":false,
+      "website":"https://online-shop-d.netlify.app/",
+      "repository":"https://github.com/banicaDaniel07/react-basics",
+      "cover": "https://i.ibb.co/ZxnpvTj/calculator.png",
+      "code":{
+         "HTML":true,
+         "CSS":true,
+         "JS":false,
+         "REACT":true,
+         "SASS":true
       }
    },
    
@@ -388,7 +403,7 @@ export default DATA_JSON;
 //    "responsive":false,
 //    "website":"https://mulan-landing-page-d.netlify.app/",
 //    "repository":"https://github.com/banicaDaniel07/mulan-landing-page",
-//    "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+//    "cover": "Here",
 //    "code":{
 //       "HTML":false,
 //       "CSS":false,
@@ -405,7 +420,7 @@ export default DATA_JSON;
 //    "responsive":false,
 //    "website":"https://HERE.netlify.app/",
 //    "repository":"https://github.com/banicaDaniel07/HERE",
-//    "cover": "https://i.ibb.co/DGqW2jr/Mulan-landing-page.png",
+//    "cover": "Here",
 //    "code":{
 //       "HTML":false,
 //       "CSS":false,
