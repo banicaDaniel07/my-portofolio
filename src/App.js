@@ -2,6 +2,7 @@ import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 
 import './App.styles.scss';
+import './mixins.scss';
 
 import HomePage from './pages/home/home.page';
 import AboutPage from './pages/about/about.page';

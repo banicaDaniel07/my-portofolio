@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .info-box {
   width: 360px;
   height: 210px;
@@ -29,4 +31,16 @@
 
 .border-right {
   border-right: 2px solid var(--orange);
+}
+
+@include breakpoint("1000px") {
+  .border-right {
+    border-right: none;
+    border-bottom: 2px solid var(--orange);
+  }
+}
+@include breakpoint("450px") {
+  .info-box {
+    width: 280px;
+  }
 }

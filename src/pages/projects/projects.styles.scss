@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .projects {
   &__container {
     width: 80%;
@@ -11,15 +13,38 @@
     justify-items: center;
     margin: 0 auto;
   }
+
+  &__cards {
+    width: 1212px;
+    height: fit-content;
+    margin: 70px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
 }
 
-.projects__card {
-  width: 1212px;
-  height: fit-content;
-  margin: 70px auto 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  gap: 30px;
+@include breakpoint("1500px") {
+  .projects {
+    &__container {
+      width: 100%;
+    }
+  }
 }
-
+@include breakpoint("1300px") {
+  .projects {
+    &__cards {
+      width: 798px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@include breakpoint("850px") {
+  .projects {
+    &__cards {
+      width: 384px;
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -37,7 +37,7 @@ const ContactPage = () => {
                 
             </div>
             <form action="" method="post">
-                <Description>If you have any questions <br/> please do no hesitate to send me a message.</Description>
+                <Description >If you have any questions <br/> please do no hesitate to send me a message.</Description>
                 <Input type='text' name='name'>Full Name</Input>
                 <Input type='email' name='email'>E-mail</Input>
                 <Input type='number' name='phone'>Phone</Input>

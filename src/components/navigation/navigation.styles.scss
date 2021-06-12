@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .nav {
   position: sticky;
   top: 0;
@@ -40,5 +42,32 @@
     color: var(--orange);
     // color: #e67e22;
     transition: all 0.2s ease-in-out;
+  }
+}
+
+.menu-btn {
+  display: none;
+}
+@include breakpoint("1600px") {
+  .nav {
+    &__container {
+      width: 90%;
+    }
+  }
+}
+@include breakpoint("600px") {
+  .nav {
+    &__list {
+      display: none;
+    }
+
+    &__logo {
+      height: var(--px50);
+      opacity: 0.9;
+    }
+  }
+
+  .menu-btn {
+    display: block;
   }
 }

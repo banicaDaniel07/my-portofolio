@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .home {
   position: relative;
   height: calc(100vh - var(--px80));
@@ -21,6 +23,7 @@
     url("../../assets/pc.jpg");
 
   &__container {
+    width: fit-content;
     position: absolute;
     top: calc(50% - var(--px50));
     left: 50%;
@@ -42,5 +45,59 @@
     font-weight: var(--weight300);
     letter-spacing: 20px;
     text-transform: uppercase;
+  }
+}
+
+@include breakpoint("1000px") {
+  .home {
+    &__title {
+      font-size: var(--px50);
+    }
+    &__subtitle {
+      font-size: var(--px30);
+    }
+  }
+}
+@include breakpoint("800px") {
+  .home {
+    &__title {
+      font-size: var(--px40);
+    }
+    &__subtitle {
+      font-size: var(--px25);
+    }
+  }
+}
+@include breakpoint("700px") {
+  .home {
+    &__container {
+      width: 90%;
+    }
+    &__title {
+      letter-spacing: 5px;
+    }
+    &__subtitle {
+      letter-spacing: 10px;
+    }
+  }
+}
+@include breakpoint("600px") {
+  .home {
+    &__title {
+      letter-spacing: 0.1rem;
+    }
+    &__subtitle {
+      letter-spacing: 5px;
+    }
+  }
+}
+@include breakpoint("450px") {
+  .home {
+    &__title {
+      font-size: var(--px35);
+    }
+    &__subtitle {
+      font-size: var(--px20);
+    }
   }
 }

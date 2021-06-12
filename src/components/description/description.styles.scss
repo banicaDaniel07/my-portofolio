@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .description {
   text-align: center;
   font-size: var(--px16);
@@ -11,4 +13,22 @@
 
 .width {
   width: var(--px1500);
+}
+
+@include breakpoint("1600px") {
+  .description {
+    width: 90%;
+  }
+}
+@include breakpoint("1200px") {
+  .description {
+    font-size: var(--px14);
+    line-height: var(--px25);
+  }
+}
+@include breakpoint("600px") {
+  .description {
+    font-size: var(--px13);
+    line-height: var(--px20);
+  }
 }

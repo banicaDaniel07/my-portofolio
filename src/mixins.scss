@@ -1,0 +1,28 @@
+$breakpoints: (
+  "1600px": 100em,
+  "1500px": 93.75em,
+  "1400px": 87.5em,
+  "1300px": 81.25em,
+  "1200px": 75em,
+  "1100px": 68.75em,
+  "1000px": 62.5em,
+  "850px": 53.125em,
+  "800px": 50em,
+  "750px": 46.875em,
+  "700px": 43.75em,
+  "600px": 37.5em,
+  "580px": 36.25em,
+  "500px": 31.25em,
+  "450px": 28.125em,
+  "400px": 25em,
+);
+
+@mixin breakpoint($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+// @import "../../mixins.scss";
+// @include breakpoint("1250px") {
+// }

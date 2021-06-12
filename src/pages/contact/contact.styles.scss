@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .contact {
   position: relative;
   display: flex;
@@ -88,6 +90,78 @@
       font-size: var(--px14);
       font-weight: var(--weight300);
       line-height: 60px;
+    }
+  }
+}
+
+@include breakpoint("1600px") {
+  // For Description mixin
+}
+@include breakpoint("1500px") {
+  .contact {
+    &__landscape {
+      height: 550px;
+    }
+    &__center {
+      font-size: var(--px70);
+    }
+  }
+}
+@include breakpoint("1000px") {
+  .contact {
+    &__landscape {
+      height: 400px;
+    }
+
+    &__infos {
+      flex-direction: column;
+    }
+
+    &__social {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+    }
+    &__center {
+      font-size: var(--px50);
+    }
+  }
+}
+@include breakpoint("800px") {
+  .contact {
+    form {
+      width: 90%;
+    }
+  }
+}
+@include breakpoint("700px") {
+  .contact {
+    &__landscape {
+      height: 300px;
+    }
+    &__center {
+      font-size: var(--px35);
+    }
+  }
+}
+@include breakpoint("600px") {
+  // For Description mixin
+}
+@include breakpoint("500px") {
+  .contact {
+    &__center {
+      font-size: var(--px25);
+    }
+  }
+}
+@include breakpoint("450px") {
+  .contact {
+    &__center {
+      font-size: var(--px25);
     }
   }
 }

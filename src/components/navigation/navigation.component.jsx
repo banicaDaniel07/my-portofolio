@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
+import Menu from '../menu/menu.component';
 
 import './navigation.styles.scss';
 
@@ -24,7 +25,7 @@ const Navigation = () => {
                     Contact
                 </Link>
             </div>
-            
+            <Menu/>
             </div>
         </div>
     )

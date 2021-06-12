@@ -87,13 +87,13 @@ const ProjectsPage = () => {
                 <Title>My Projects</Title>
                 <div className="projects__container">
                     <div className="projects__options">
-                        <OptionButton language={html}>HTML</OptionButton>
+                        <OptionButton language={html} forHide>HTML</OptionButton>
                         <OptionButton handler={renderCss} language={css}>CSS</OptionButton>
                         <OptionButton handler={renderJs} language={js}>JS</OptionButton>
                         <OptionButton handler={renderReact} language={react}>REACT</OptionButton>
                         <OptionButton handler={renderSass} language={sass}>SASS</OptionButton>
                     </div>
-                    <div className="projects__card">
+                    <div className="projects__cards">
                         {
                             filtred.map(project => {
                                 return (

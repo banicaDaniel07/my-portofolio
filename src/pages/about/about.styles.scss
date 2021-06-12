@@ -1,8 +1,10 @@
+@import "../../mixins.scss";
 .about {
   &__cards {
     width: 66%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin: 0 auto;
     justify-items: center;
     margin-top: 100px;
@@ -18,5 +20,46 @@
     bottom: 0;
     right: 0;
     background-color: rgba(34, 34, 34, 0.6);
+  }
+}
+@include breakpoint("1500px") {
+  .about {
+    &__cards {
+      width: 980px;
+      gap: 40px;
+    }
+  }
+}
+@include breakpoint("1100px") {
+  .about {
+    &__cards {
+      gap: 20px;
+    }
+  }
+}
+@include breakpoint("1000px") {
+  .about {
+    &__cards {
+      width: 500px;
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+  }
+}
+@include breakpoint("600px") {
+  .about {
+    &__cards {
+      width: 400px;
+    }
+  }
+}
+@include breakpoint("500px") {
+  .about {
+    &__cards {
+      margin-bottom: 50px;
+    }
+    &__cards {
+      width: 300px;
+    }
   }
 }

@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.menu-btn {
+  position: relative;
+  display: block;
+  font-size: 80px;
+  width: 2em;
+  height: 2em;
+  margin: 30px 0;
+  background-color: rgba(22, 22, 22, 0.6);
+}
+.menu-btn:hover {
+  background-color: rgba(22, 22, 22, 0.8);
+}
+.menu-btn > span:before,
+.menu-btn > span:after,
+.menu-btn > span {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0.4em;
+  top: 0.95em;
+  width: 1.2em;
+  height: 0.1em;
+  background: rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.menu-btn > span:before,
+.menu-btn > span:after {
+  top: 0.28em;
+  left: 0;
+  height: 100%;
+}
+.menu-btn > span:after {
+  top: -0.28em;
+}
+.menu-btn.on > span {
+  background: rgba(255, 255, 255, 0);
+}
+.menu-btn.on > span:before {
+  -webkit-transform: rotate(-45deg) translate(0.2em, -0.2em);
+  -moz-transform: rotate(-45deg) translate(0.2em, -0.2em);
+  -ms-transform: rotate(-45deg) translate(0.2em, -0.2em);
+  -o-transform: rotate(-45deg) translate(0.2em, -0.2em);
+  transform: rotate(-45deg) translate(0.2em, -0.2em);
+}
+.menu-btn.on > span:after {
+  -webkit-transform: rotate(45deg) translate(0.2em, 0.2em);
+  -moz-transform: rotate(45deg) translate(0.2em, 0.2em);
+  -ms-transform: rotate(45deg) translate(0.2em, 0.2em);
+  -o-transform: rotate(45deg) translate(0.2em, 0.2em);
+  transform: rotate(45deg) translate(0.2em, 0.2em);
+}
