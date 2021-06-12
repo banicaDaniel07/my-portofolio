@@ -9,7 +9,7 @@ const DATA_JSON = [
       "code":{
          "HTML":true,
          "CSS":false,
-         "JS":true,
+         "JS":false,
          "SASS":false,
          "REACT":true
       }
@@ -54,7 +54,7 @@ const DATA_JSON = [
       "code":{
          "HTML":true,
          "CSS":true,
-         "JS":true,
+         "JS":false,
          "REACT":true,
          "SASS":false
       }
@@ -84,7 +84,7 @@ const DATA_JSON = [
       "code":{
          "HTML":true,
          "CSS":true,
-         "JS":true,
+         "JS":false,
          "REACT":false,
          "SASS":false
       }
@@ -160,7 +160,7 @@ const DATA_JSON = [
       "code":{
          "HTML":true,
          "CSS":false,
-         "JS":true,
+         "JS":false,
          "REACT":true,
          "SASS":false
       }
@@ -220,7 +220,7 @@ const DATA_JSON = [
       "code":{
          "HTML":true,
          "CSS":false,
-         "JS":true,
+         "JS":false,
          "REACT":true,
          "SASS":true
       }
@@ -307,7 +307,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://my-gallery-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/my-gallery",
-      "cover": "Here",
+      "cover": "https://i.ibb.co/wSWfjQm/my-gallery.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -322,7 +322,7 @@ const DATA_JSON = [
       "responsive":true,
       "website":"https://calculator-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/calculator",
-      "cover": "https://i.ibb.co/wSWfjQm/my-gallery.jpg",
+      "cover": "https://i.ibb.co/ZxnpvTj/calculator.png ",
       "code":{
          "HTML":true,
          "CSS":true,
@@ -383,7 +383,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://online-shop-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/react-basics",
-      "cover": "https://i.ibb.co/ZxnpvTj/calculator.png",
+      "cover": "https://i.ibb.co/wSWfjQm/my-gallery.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
