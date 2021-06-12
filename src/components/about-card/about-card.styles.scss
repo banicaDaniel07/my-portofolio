@@ -13,7 +13,22 @@
       object-fit: cover;
     }
   }
+  &__overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(34, 34, 34, 0.6);
+  }
+
   &__title {
+    visibility: hidden;
+    opacity: 0;
     width: 100%;
     text-align: center;
     position: absolute;
@@ -26,6 +41,8 @@
   }
 
   &__quote {
+    visibility: hidden;
+    opacity: 0;
     width: 100%;
     padding: 0 30px;
     position: absolute;
@@ -35,6 +52,22 @@
     z-index: 1;
     letter-spacing: 0.1rem;
     line-height: var(--px25);
+  }
+}
+
+.about__card__show {
+  .about__overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .about__quote {
+    visibility: visible;
+    opacity: 1;
+  }
+  .about__title {
+    visibility: visible;
+    opacity: 1;
   }
 }
 

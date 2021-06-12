@@ -3,9 +3,17 @@ import React from 'react';
 import './card.styles.scss';
 
 const Card = (props) => {
+    const mouseOverHandler = (e) => {
+        const hovered = e.target.closest('.card');
+        hovered.classList.add('show__card');
+    }
+    const mouseOutHandler = (e) => {
+        const hovered = e.target.closest('.card');
+        hovered.classList.remove('show__card');
+    }
     const {cover, name, website, repository, responsive, code} = props.project;
     return (
-        <div className="card">
+        <div className="card" onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>
             <img src={cover} alt={name} />
             <div className="card__overlay">
                 <div className="card__buttons">
