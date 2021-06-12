@@ -49,3 +49,9 @@
   justify-items: center;
   gap: 30px;
 }
+
+.button__active {
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+  color: var(--dark);
+}
