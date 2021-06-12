@@ -231,7 +231,7 @@ const DATA_JSON = [
       "name":"Waves Music",
       "responsive":true,
       "website":"https://waves-music-d.netlify.app/",
-      "repository":"https://github.com/banicaDaniel07/waves-music",
+      "repository":"https://github.com/banicaDaniel07/music-waves",
       "cover": "https://i.ibb.co/bFnmcjc/waves-music.jpg",
       "code":{
          "HTML":true,
@@ -245,8 +245,8 @@ const DATA_JSON = [
       "id":17,
       "name":"Client Side Validation",
       "responsive":true,
-      "website":"https://client-site-validation-d.netlify.app/",
-      "repository":"https://github.com/banicaDaniel07/client-site-validation",
+      "website":"https://client-side-validation-d.netlify.app/",
+      "repository":"https://github.com/banicaDaniel07/client-side-validation",
       "cover": "https://i.ibb.co/7yj9cKj/client-side-validation.png",
       "code":{
          "HTML":true,
@@ -306,7 +306,7 @@ const DATA_JSON = [
       "name":"My Gallery",
       "responsive":false,
       "website":"https://my-gallery-d.netlify.app/",
-      "repository":"https://github.com/banicaDaniel07/my-gallery",
+      "repository":"https://github.com/banicaDaniel07/gallery",
       "cover": "https://i.ibb.co/wSWfjQm/my-gallery.jpg",
       "code":{
          "HTML":true,
@@ -352,7 +352,7 @@ const DATA_JSON = [
       "name":"New Year Countdown",
       "responsive":false,
       "website":"https://new-year-countdown-d.netlify.app/",
-      "repository":"https://github.com/banicaDaniel07/new-year-countdown",
+      "repository":"https://github.com/banicaDaniel07/new-year-web",
       "cover": "https://i.ibb.co/9hxLgJR/countdown.jpg",
       "code":{
          "HTML":true,
@@ -367,7 +367,7 @@ const DATA_JSON = [
       "name":"Clock",
       "responsive":true,
       "website":"https://clock-d.netlify.app/",
-      "repository":"https://github.com/banicaDaniel07/clock",
+      "repository":"https://github.com/banicaDaniel07/clock-web",
       "cover": "https://i.ibb.co/kqZvKSp/clock.png",
       "code":{
          "HTML":true,
@@ -383,7 +383,7 @@ const DATA_JSON = [
       "responsive":false,
       "website":"https://online-shop-d.netlify.app/",
       "repository":"https://github.com/banicaDaniel07/react-basics",
-      "cover": "https://i.ibb.co/wSWfjQm/my-gallery.jpg",
+      "cover": "https://i.ibb.co/sy9Q9hD/online-shop.jpg",
       "code":{
          "HTML":true,
          "CSS":true,
