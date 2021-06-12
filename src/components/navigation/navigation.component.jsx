@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 import Menu from '../menu/menu.component';
@@ -6,12 +6,13 @@ import Menu from '../menu/menu.component';
 import './navigation.styles.scss';
 
 const Navigation = () => {
+    const [isShowing, setIsShowing] = useState(false);
     return (
         <div className='nav '>
             <div className="nav__container">
                 
             <img src={logo} alt="logo" className="nav__logo"/>
-            <div className="nav__list">
+            <div className={`nav__list ${isShowing ? 'show__nav' : ''}`}>
                 <Link to="/">
                     Home
                 </Link>
@@ -25,7 +26,7 @@ const Navigation = () => {
                     Contact
                 </Link>
             </div>
-            <Menu/>
+            <Menu isShowing={isShowing} setIsShowing={setIsShowing}/>
             </div>
         </div>
     )
