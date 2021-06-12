@@ -47,6 +47,7 @@
     }
   }
 
+  // Two link to website and repository
   &__content {
     width: 40px;
     height: 40px;
@@ -74,6 +75,7 @@
     }
   }
 
+  // Website name
   &__name {
     font-size: 1rem;
     font-weight: var(--weight300);
@@ -82,12 +84,14 @@
     margin-bottom: 30px;
   }
 
+  // Is or not responsive
   &__responsive {
     font-size: 1rem;
     letter-spacing: 0.1rem;
     font-weight: var(--weight300);
   }
 
+  // Two color for is/not
   &__red {
     color: var(--red);
   }
@@ -96,6 +100,7 @@
     color: var(--green);
   }
 
+  // Languages code container
   &__codes {
     position: absolute;
     bottom: 10px;
@@ -106,6 +111,7 @@
     align-items: center;
   }
 
+  // Programing languages used image
   &__code {
     width: 30px;
     height: 100%;
@@ -125,13 +131,14 @@
     background-image: url("../../assets/coding/js.png");
   }
   &__react {
-    background-image: url("../../assets/coding/react.jpg");
+    background-image: url("../../assets/coding/react.png");
   }
   &__sass {
-    background-image: url("../../assets/coding/sass.jpg");
+    background-image: url("../../assets/coding/sass.png");
   }
 }
 
+// Hide the icon if is not used in final code
 .hide {
   display: none;
 }

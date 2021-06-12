@@ -1,7 +1,10 @@
 import React from 'react'
 import CustomButton from '../../components/custom-button/custom-button.component';
 import Input from '../../components/input/input.component';
-
+import LinkIcon from '../../components/link-icon/link-icon.component';
+import Title from '../../components/title/title.component';
+import Description from '../../components/description/description.component';
+import InfoBox from '../../components/info-box/info-box.component';
 
 import './contact.styles.scss';
 const ContactPage = () => {
@@ -14,57 +17,39 @@ const ContactPage = () => {
                 </h2>
             </div>
             <div className="contact__info">
-                <h2 className="contact__subtitle">Get in touch with me!</h2>
+                <Title>Get in touch with me!</Title>
                 <div className="contact__infos">
-                    <div className="contact__phone info">
-                    <i className="fas fa-mobile-alt"></i>
-                        <span>Phone</span>
-                        <p>phone 0736 533 401</p>
-                    </div>
-                    <div className="contact__adrress info">
-                    <i className="fas fa-map-marker-alt"></i>
-                        <span>Adrress</span>
-                        <p>Galati,  Romania</p>
-                    </div>
-                    <div className="contact__email info">
-                    <i className="fas fa-envelope"></i>
-                        <span>Email</span>
-                        <p>banica.daniel07@gmail.com</p>
-                    </div>
+                    <InfoBox 
+                    border 
+                    iconClass={"fas fa-mobile-alt"} 
+                    name={'Phone'} 
+                    details='phone 0736 533 401'/>
+                    <InfoBox 
+                    border 
+                    iconClass="fas fa-map-marker-alt"
+                    name='Adrress' 
+                    details='Galati,  Romania'/>
+                    <InfoBox
+                    iconClass={"fas fa-envelope"} 
+                    name={'Email'} 
+                    details='banica.daniel07@gmail.com'/>
                 </div>
                 
             </div>
             <form action="" method="post">
-                <h2 className="contact__title">If you have any questions <br/> please do no hesitate to send me a message.</h2>
+                <Description>If you have any questions <br/> please do no hesitate to send me a message.</Description>
                 <Input type='text' name='name'>Full Name</Input>
                 <Input type='email' name='email'>E-mail</Input>
                 <Input type='number' name='phone'>Phone</Input>
                 <Input textarea name='message'>Your Message</Input>
                 <CustomButton>Send Message</CustomButton>
             </form>
-                <h2 className='contact__connect'>Connect with me!</h2>
+                <Title>Connect with me!</Title>
             <div className="contact__social">
-            <a className='contact__cv' href="https://www.google.com" target="_blank" rel="noreferrer">
-                <div className="contact__content">
-                    <i className="fab fa-facebook-f"></i>
-                </div>
-            </a>
-            <a className='contact__cv' href="https://www.google.com" target="_blank" rel="noreferrer">  
-                <div className="contact__content">
-                    <i className="fab fa-github"></i>
-                </div>
-            </a>
-            <a className='contact__cv' href="https://www.google.com" target="_blank" rel="noreferrer">
-                <div className="contact__content">
-                    <i className="fab fa-linkedin-in"></i>
-                </div>
-            </a>
-
-            <a className='contact__cv' href="https://www.google.com" target="_blank" rel="noreferrer">
-                <div className="contact__content">
-                    <i className="fas fa-folder-open"></i>
-                </div>            
-            </a>
+                <LinkIcon url={'https://www.google.com'} iconClass={'fab fa-facebook-f'}/>
+                <LinkIcon url={'https://www.google.com'} iconClass={'fab fa-github'}/>
+                <LinkIcon url={'https://www.google.com'} iconClass={'fab fa-linkedin-in'}/>
+                <LinkIcon url={'https://www.google.com'} iconClass={'fas fa-folder-open'}/>
             </div>
             <footer>
                 <h1>Created by Banica Daniel, &copy; {year}</h1>

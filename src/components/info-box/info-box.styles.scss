@@ -1,0 +1,32 @@
+.info-box {
+  width: 360px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    text-transform: uppercase;
+    font-size: var(--px16);
+    font-weight: var(--weight500);
+    color: var(--orange);
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: var(--px14);
+    color: var(--white-dark);
+    letter-spacing: 0.1rem;
+    font-weight: var(--weight300);
+  }
+
+  i {
+    font-size: var(--px30);
+    color: var(--orange);
+    margin-bottom: 15px;
+  }
+}
+
+.border-right {
+  border-right: 2px solid var(--orange);
+}

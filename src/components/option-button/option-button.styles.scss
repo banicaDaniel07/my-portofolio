@@ -1,0 +1,21 @@
+.option__button {
+  font-size: var(--px25);
+  font-style: italic;
+  padding: 5px 20px;
+  border: 1.5px solid var(--white-d);
+  border-radius: 30px;
+  font-weight: var(--weight300);
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.option__button:hover {
+  background-color: var(--white-d);
+  color: var(--dark);
+}
+
+.button__active {
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+  color: var(--dark);
+}

@@ -5,7 +5,6 @@ import './App.styles.scss';
 
 import HomePage from './pages/home/home.page';
 import AboutPage from './pages/about/about.page';
-import SkillsPage from './pages/skills/skills.page';
 import ProjectsPage from './pages/projects/projects.page';
 import ContactPage from './pages/contact/contact.page';
 import Navigation from './components/navigation/navigation.component';
@@ -18,7 +17,6 @@ function App() {
       <Switch>
         <Route  exact path={"/"} component={HomePage} />
         <Route  path={"/about"} component={AboutPage} />
-        <Route  path={"/skills"} component={SkillsPage} />
         <Route  path={"/projects"} component={ProjectsPage} />
         <Route  path={"/contact"} component={ContactPage} />
       </Switch>

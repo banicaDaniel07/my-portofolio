@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../../components/card/card.component';
 import DATA_JSON from '../../data';
+import Title from '../../components/title/title.component';
+import OptionButton from '../../components/option-button/option-button.component';
 
 import './projects.styles.scss';
 
@@ -82,14 +84,14 @@ const ProjectsPage = () => {
 
         return (
             <div className='projects'>
-                <h1 className="projects__title">My Projects</h1>
+                <Title>My Projects</Title>
                 <div className="projects__container">
                     <div className="projects__options">
-                        <div  className={`option__button ${html ? "button__active" : ""}`}>HTML</div>
-                        <div onClick={renderCss} className={`option__button ${css ? "button__active" : ""}`}>CSS</div>
-                        <div onClick={renderJs} className={`option__button ${js ? "button__active" : ""}`}>JS</div>
-                        <div onClick={renderSass} className={`option__button ${sass ? "button__active" : ""}`}>SASS</div>
-                        <div onClick={renderReact} className={`option__button ${react ? "button__active" : ""}`}>REACT</div>
+                        <OptionButton language={html}>HTML</OptionButton>
+                        <OptionButton handler={renderCss} language={css}>CSS</OptionButton>
+                        <OptionButton handler={renderJs} language={js}>JS</OptionButton>
+                        <OptionButton handler={renderReact} language={react}>REACT</OptionButton>
+                        <OptionButton handler={renderSass} language={sass}>SASS</OptionButton>
                     </div>
                     <div className="projects__card">
                         {
