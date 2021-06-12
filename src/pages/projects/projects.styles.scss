@@ -48,3 +48,19 @@
     }
   }
 }
+
+@include breakpoint("430px") {
+  .projects {
+    &__cards {
+      width: 320px;
+    }
+  }
+}
+
+@include breakpoint("380px") {
+  .projects {
+    &__cards {
+      width: 274.2px;
+    }
+  }
+}
