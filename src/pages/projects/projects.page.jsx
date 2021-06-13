@@ -4,6 +4,8 @@ import DATA_JSON from '../../data';
 import Title from '../../components/title/title.component';
 import OptionButton from '../../components/option-button/option-button.component';
 
+import ScrollTop from '../../components/scroll-top/scroll-top.component';
+
 import './projects.styles.scss';
 
 const ProjectsPage = () => {
@@ -103,6 +105,7 @@ const ProjectsPage = () => {
                         }
                     </div>
                 </div>
+                        <ScrollTop/>
             </div>
         )
     }

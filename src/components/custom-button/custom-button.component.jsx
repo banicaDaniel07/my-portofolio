@@ -2,11 +2,11 @@ import React from 'react';
 
 import './custom-button.styles.scss';
 
-const CustomButton = ({children}) => {
+const CustomButton = ({children, type}) => {
     return (
-        <div className='custom__button'>
+        <button type={type} className='custom__button'>
             {children}
-        </div>
+        </button>
     )
 }
 

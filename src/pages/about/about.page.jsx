@@ -6,6 +6,7 @@ import drive from '../../assets/drive.jpg';
 import AboutCard from '../../components/about-card/about-card.component';
 import Title from '../../components/title/title.component';
 import Description from '../../components/description/description.component';
+import ScrollTop from '../../components/scroll-top/scroll-top.component';
 
 import './about.styles.scss';
 
@@ -24,6 +25,7 @@ const AboutPage = () => {
 
                 
             </div>
+            <ScrollTop/>
         </div>
     )
 }
