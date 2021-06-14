@@ -8,8 +8,10 @@ import InfoBox from '../../components/info-box/info-box.component';
 import ScrollTop from '../../components/scroll-top/scroll-top.component';
 
 import emailjs from 'emailjs-com';
+import { motion } from 'framer-motion';
 
 import './contact.styles.scss';
+import { coverVariants } from '../../animation';
 const ContactPage = () => {
 
     function sendEmail(e) {
@@ -27,7 +29,13 @@ const ContactPage = () => {
 
     let year = new Date().getFullYear();
     return (
-        <div className='contact'>
+        <motion.div className='contact'>
+            <motion.div
+            variants={coverVariants}
+            initial='initial'
+            animate='animate'
+            exit='exit'
+            className="cover__exit"></motion.div>
             <div className="contact__landscape">
                 <h2 className="contact__center">
                     CONTACT ME
@@ -72,7 +80,7 @@ const ContactPage = () => {
                 <h1>Created by Banica Daniel, &copy; {year}</h1>
             </footer>
             <ScrollTop/>
-        </div>
+        </motion.div>
     )
 }
 

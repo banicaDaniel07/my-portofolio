@@ -1,5 +1,6 @@
 import React from 'react'; 
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, useLocation} from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 import './App.styles.scss';
 import './mixins.scss';
@@ -12,15 +13,18 @@ import Navigation from './components/navigation/navigation.component';
 
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
-      <Navigation />
-      <Switch>
-        <Route  exact path={"/"} component={HomePage} />
-        <Route  path={"/about"} component={AboutPage} />
-        <Route  path={"/projects"} component={ProjectsPage} />
-        <Route  path={"/contact"} component={ContactPage} />
-      </Switch>
+      <Navigation  />
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route  exact path={"/"} component={HomePage} />
+          <Route  path={"/about"} component={AboutPage} />
+          <Route  path={"/projects"} component={ProjectsPage} />
+          <Route  path={"/contact"} component={ContactPage} />
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }

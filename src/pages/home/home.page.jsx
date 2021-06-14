@@ -1,18 +1,37 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 
 import ScrollTop from '../../components/scroll-top/scroll-top.component';
+import { titleVariants, subtitleVariants, coverVariants } from '../../animation';
 
 import './home.styles.scss';
 
 const HomePage = () => {
+    
     return (
-        <div className='home'>
+        <motion.div className='home'>
+            <motion.div
+            variants={coverVariants}
+            initial='initial'
+            animate='animate'
+            exit='exit'
+            className="cover__exit"></motion.div>
             <div className="home__container">
-                <h1 className="home__title">Banica Daniel</h1>
-                <h3 className="home__subtitle">Front End Developer</h3>
+                <motion.h1 
+                    variants={titleVariants}
+                    initial='initial'
+                    animate='animate'     
+                    exit='exit'
+                    className="home__title">Banica Daniel</motion.h1>
+                <motion.h3 
+                    variants={subtitleVariants}
+                    initial='initial'
+                    animate='animate'
+                    exit='exit'
+                    className="home__subtitle">Front End Developer</motion.h3>
             </div>
         <ScrollTop/>
-        </div>
+        </motion.div>
     )
 }
 

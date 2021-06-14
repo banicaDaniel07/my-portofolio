@@ -1,6 +1,7 @@
 @import "../../mixins.scss";
 
 .projects {
+  position: relative;
   &__container {
     width: 80%;
     height: fit-content;

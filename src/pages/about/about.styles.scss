@@ -1,5 +1,6 @@
 @import "../../mixins.scss";
 .about {
+  position: relative;
   &__cards {
     width: 66%;
     display: grid;
@@ -10,8 +11,6 @@
     margin-top: 100px;
     margin-bottom: 100px;
   }
-
-  
 }
 @include breakpoint("1500px") {
   .about {

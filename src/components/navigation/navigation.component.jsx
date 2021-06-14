@@ -13,16 +13,24 @@ const Navigation = () => {
                 
             <img src={logo} alt="logo" className="nav__logo"/>
             <div className={`nav__list ${isShowing ? 'show__nav' : ''}`}>
-                <Link to="/">
+                <Link  
+                // onClick={()=>setIsShowing(!isShowing)}
+                to="/">
                     Home
                 </Link>
-                <Link to="/about">
+                <Link 
+                // onClick={()=>setIsShowing(!isShowing)}
+                to="/about">
                     About
                 </Link>
-                <Link to="/projects">
+                <Link
+                // onClick={()=>setIsShowing(!isShowing)}
+                to="/projects">
                     Projects
                 </Link>
-                <Link to="/contact">
+                <Link
+                // onClick={()=>setIsShowing(!isShowing)}
+                to="/contact">
                     Contact
                 </Link>
             </div>

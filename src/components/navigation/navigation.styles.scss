@@ -82,6 +82,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 200;
     a {
       line-height: var(--px18);
       margin: 30px 0 !important;

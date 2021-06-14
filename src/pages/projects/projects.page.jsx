@@ -7,6 +7,8 @@ import OptionButton from '../../components/option-button/option-button.component
 import ScrollTop from '../../components/scroll-top/scroll-top.component';
 
 import './projects.styles.scss';
+import { coverVariants } from '../../animation';
+import { motion } from 'framer-motion';
 
 const ProjectsPage = () => {
         const [projects] = useState(DATA_JSON);
@@ -85,7 +87,13 @@ const ProjectsPage = () => {
 
 
         return (
-            <div className='projects'>
+            <motion.div className='projects'>
+                <motion.div
+                variants={coverVariants}
+                initial='initial'
+                animate='animate'
+                exit='exit'
+                className="cover__exit"></motion.div>
                 <Title>My Projects</Title>
                 <div className="projects__container">
                     <div className="projects__options">
@@ -106,7 +114,7 @@ const ProjectsPage = () => {
                     </div>
                 </div>
                         <ScrollTop/>
-            </div>
+            </motion.div>
         )
     }
 
