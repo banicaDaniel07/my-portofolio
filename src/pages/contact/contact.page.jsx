@@ -84,7 +84,7 @@ const ContactPage = () => {
                 <LinkIcon url={'https://www.facebook.com/daniel.banica.735/'} iconClass={'fab fa-facebook-f'}/>
                 <LinkIcon url={'https://github.com/banicaDaniel07'} iconClass={'fab fa-github'}/>
                 <LinkIcon url={'https://www.linkedin.com/in/daniel-banica-8b5643214/'} iconClass={'fab fa-linkedin-in'}/>
-                <LinkIcon url={'https://smallpdf.com/shared#st=c69d7acb-3e46-4b74-8405-2d1b75d29862&fn=React+Pictures+Theory+%281%29.pdf&ct=1623601627023&tl=share-document&rf=link'} iconClass={'fas fa-folder-open'}/>
+                <LinkIcon url={'https://www.scribd.com/document/511878430/My-curriculum-vitae'} iconClass={'fas fa-folder-open'}/>
             </div>
             <footer>
                 <h1>Created by Banica Daniel, &copy; {year}</h1>
