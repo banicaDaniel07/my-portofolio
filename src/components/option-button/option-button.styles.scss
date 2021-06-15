@@ -1,19 +1,26 @@
 @import "../../mixins.scss";
 
 .option__button {
-  font-size: var(--px25);
-  font-style: italic;
   padding: 5px 20px;
   border: 1.5px solid var(--white-d);
   border-radius: 30px;
-  font-weight: var(--weight300);
   margin: 0 20px;
   cursor: pointer;
+  overflow: hidden;
+
+  h1 {
+    font-size: var(--px25);
+    font-style: italic;
+    font-weight: var(--weight300);
+  }
 }
 
 .option__button:hover {
   background-color: var(--white-d);
-  color: var(--dark);
+
+  h1 {
+    color: var(--dark);
+  }
 }
 
 .button__active {
@@ -30,10 +37,13 @@
 }
 @include breakpoint("600px") {
   .option__button {
-    font-size: var(--px16);
     padding: 5px 8px;
     border: 1px solid var(--white-d);
     margin: 0 10px;
+
+    h1 {
+      font-size: var(--px16);
+    }
   }
 }
 

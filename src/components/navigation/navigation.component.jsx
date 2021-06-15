@@ -14,22 +14,22 @@ const Navigation = () => {
             <img src={logo} alt="logo" className="nav__logo"/>
             <div className={`nav__list ${isShowing ? 'show__nav' : ''}`}>
                 <Link  
-                // onClick={()=>setIsShowing(!isShowing)}
+                onClick={()=>setIsShowing(!isShowing)}
                 to="/">
                     Home
                 </Link>
                 <Link 
-                // onClick={()=>setIsShowing(!isShowing)}
+                onClick={()=>setIsShowing(!isShowing)}
                 to="/about">
                     About
                 </Link>
                 <Link
-                // onClick={()=>setIsShowing(!isShowing)}
+                onClick={()=>setIsShowing(!isShowing)}
                 to="/projects">
                     Projects
                 </Link>
                 <Link
-                // onClick={()=>setIsShowing(!isShowing)}
+                onClick={()=>setIsShowing(!isShowing)}
                 to="/contact">
                     Contact
                 </Link>

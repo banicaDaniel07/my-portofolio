@@ -1,8 +1,10 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import './card.styles.scss';
+import { cardAnimation } from '../../animation';
 
-const Card = (props) => {
+const Card = ({project}) => {
     const mouseOverHandler = (e) => {
         const hovered = e.target.closest('.card');
         hovered.classList.add('show__card');
@@ -11,9 +13,13 @@ const Card = (props) => {
         const hovered = e.target.closest('.card');
         hovered.classList.remove('show__card');
     }
-    const {cover, name, website, repository, responsive, code} = props.project;
+    const {cover, name, website, repository, responsive, code} = project;
     return (
-        <div className="card" onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>
+        <motion.div
+        variants={cardAnimation}
+        initial='initial'
+        animate='animate'
+        className="card" onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>
             <img src={cover} alt={name} />
             <div className="card__overlay">
                 <div className="card__buttons">
@@ -40,7 +46,7 @@ const Card = (props) => {
                         <div className={`card__sass card__code ${code.SASS ? '' : 'hide'}`}></div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

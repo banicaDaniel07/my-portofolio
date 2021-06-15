@@ -10,26 +10,56 @@ import ScrollTop from '../../components/scroll-top/scroll-top.component';
 import { motion } from 'framer-motion';
 
 import './about.styles.scss';
-import { coverVariants } from '../../animation';
-
+import { 
+    aboutDownCardAnimation,
+    aboutLeftCardAnimation,
+    aboutRightCardAnimation, 
+    leftVariants, 
+    rightVariants, 
+    titleDownAnimation, 
+    titleUpAnimation 
+} from '../../animation';
 
 const AboutPage = () => {
     return (
         <motion.div className='about'>
             <motion.div
-            variants={coverVariants}
+            variants={leftVariants}
             initial='initial'
             animate='animate'
             exit='exit'
-            className="cover__exit"></motion.div>
-            <Title>About me</Title>
-            <Description width >I am an junior front end developer, 24 years old, who lives in Romania, passionate about the work I do and I’am always dedicated. Started in college with some back end programing languages, like C++, Java and PHP, but fell in love with front end. I like to learn new thinks and with JavaScript or Front end, learning never stops, because thinks change very fast. I am always interested in new technologies and libraries that can be used to improve the current state of the application that's why i choosed React. </Description>
-            <Title>My Passions</Title>
+            className="cover__left"></motion.div>
+            <motion.div
+            variants={rightVariants}
+            initial='initial'
+            animate='animate'
+            exit='exit'
+            className="cover__right"></motion.div>
+            <Title variant={titleDownAnimation}>About me</Title>
+            <Description width >
+                I am an junior front end developer, 24 years old, who lives in Romania, passionate about the work I do and I’am always dedicated. Started in college with some back end programing languages, like C++, Java and PHP, but fell in love with front end. I like to learn new thinks and with JavaScript or Front end, learning never stops, because thinks change very fast. I am always interested in new technologies and libraries that can be used to improve the current state of the application that's why i choosed React. 
+            </Description>
+            <Title variant={titleUpAnimation}>My Passions</Title>
             <div className="about__cards">
 
-                <AboutCard src={cook} title={'Cooking'} quote={'"A balanced diet is a cookie in each hand." '}/>
-                <AboutCard src={drive} title={'Drive and Music'} quote={'"Best therapy sometimes is a drive and music." '}/>
-                <AboutCard src={gym} title={'Gym'} quote={'"All progress takes place outside the comfort zone." '}/>
+                <AboutCard 
+                    variant={aboutLeftCardAnimation} 
+                    src={cook} 
+                    title={'Cooking'} 
+                    quote={'"A balanced diet is a cookie in each hand." '}
+                />
+                <AboutCard 
+                    variant={aboutDownCardAnimation} 
+                    src={drive} 
+                    title={'Drive and Music'} 
+                    quote={'"Best therapy sometimes is a drive and music." '}
+                />
+                <AboutCard 
+                    variant={aboutRightCardAnimation} 
+                    src={gym} 
+                    title={'Gym'} 
+                    quote={'"All progress takes place outside the comfort zone." '}
+                />
 
                 
             </div>

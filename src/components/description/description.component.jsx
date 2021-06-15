@@ -1,12 +1,18 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import './description.styles.scss';
+import { descriptionAnimation } from '../../animation';
 
 const Description = ({children, width}) => {
     return (
-        <h2 className={`description ${width ? 'width' : ''}`}>
+        <motion.h2
+        variants={descriptionAnimation}
+        initial='initial'
+        animate='animate'
+        className={`description ${width ? 'width' : ''}`}>
             {children}
-        </h2>
+        </motion.h2>
     )
 }
 

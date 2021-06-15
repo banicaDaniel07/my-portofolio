@@ -1,8 +1,10 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import './about-card.styles.scss';
+import { optionRightButtonAnimation } from '../../animation';
 
-const AboutCard = ({src, title, quote}) => {
+const AboutCard = ({src, title, quote, variant}) => {
     const mouseOverHandler = (e) => {
         const hovered = e.target.closest('.about__card');
         hovered.classList.add('about__card__show');
@@ -12,14 +14,22 @@ const AboutCard = ({src, title, quote}) => {
         hovered.classList.remove('about__card__show');
     }
     return (
-        <div className="about__card"  onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>
+        <motion.div
+        variants={variant}
+        initial='initial'
+        animate='animate'
+        className="about__card"  onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>
                     <img src={src} alt={title}/>
-                    <h1 className="about__title">{title}</h1>
+                    <motion.h1 
+                    variants={optionRightButtonAnimation}
+                    initial='intial'
+                    animate='animate'
+                    className="about__title">{title}</motion.h1>
                     <p className="about__quote">
                         {quote}
                     </p>
                     <div className="about__overlay"></div>
-                </div>
+                </motion.div>
     )
 }
 

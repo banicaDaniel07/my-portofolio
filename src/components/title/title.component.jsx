@@ -1,12 +1,19 @@
 import React from 'react';
 
 import './title.styles.scss';
+import { motion } from 'framer-motion';
 
-const Title = ({children}) => {
+const Title = ({children, variant}) => {
     return (
-        <h1 className='title'>
-            {children}
-        </h1>
+        <motion.div className='title'>
+            <motion.h1
+            variants={variant}
+            initial='initial'
+            animate='animate'
+            className='title__content'>
+                {children}
+            </motion.h1>
+        </motion.div>
     )
 }
 

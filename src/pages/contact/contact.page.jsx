@@ -11,7 +11,7 @@ import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
 
 import './contact.styles.scss';
-import { coverVariants } from '../../animation';
+import { contactTextAnimation, leftVariants, rightVariants, titleUpAnimation } from '../../animation';
 const ContactPage = () => {
 
     function sendEmail(e) {
@@ -31,18 +31,28 @@ const ContactPage = () => {
     return (
         <motion.div className='contact'>
             <motion.div
-            variants={coverVariants}
+            variants={leftVariants}
             initial='initial'
             animate='animate'
             exit='exit'
-            className="cover__exit"></motion.div>
+            className="cover__left"></motion.div>
+            <motion.div
+            variants={rightVariants}
+            initial='initial'
+            animate='animate'
+            exit='exit'
+            className="cover__right"></motion.div>
             <div className="contact__landscape">
-                <h2 className="contact__center">
+                <motion.h2
+                variants={contactTextAnimation}
+                initial='initial'
+                animate='animate'
+                className="contact__center">
                     CONTACT ME
-                </h2>
+                </motion.h2>
             </div>
             <div className="contact__info">
-                <Title>Get in touch with me!</Title>
+                <Title variant={titleUpAnimation}>Get in touch with me!</Title>
                 <div className="contact__infos">
                     <InfoBox 
                     border 

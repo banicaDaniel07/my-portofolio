@@ -5,9 +5,9 @@ import Title from '../../components/title/title.component';
 import OptionButton from '../../components/option-button/option-button.component';
 
 import ScrollTop from '../../components/scroll-top/scroll-top.component';
-
+ 
 import './projects.styles.scss';
-import { coverVariants } from '../../animation';
+import { leftVariants, optionLeftButtonAnimation, optionLeft1ButtonAnimation, optionRightButtonAnimation, optionRight1ButtonAnimation, rightVariants, optionMiddleButtonAnimation, titleUpAnimation } from '../../animation';
 import { motion } from 'framer-motion';
 
 const ProjectsPage = () => {
@@ -88,30 +88,36 @@ const ProjectsPage = () => {
 
         return (
             <motion.div className='projects'>
-                <motion.div
-                variants={coverVariants}
-                initial='initial'
-                animate='animate'
-                exit='exit'
-                className="cover__exit"></motion.div>
-                <Title>My Projects</Title>
+               <motion.div
+            variants={leftVariants}
+            initial='initial'
+            animate='animate'
+            exit='exit'
+            className="cover__left"></motion.div>
+            <motion.div
+            variants={rightVariants}
+            initial='initial'
+            animate='animate'
+            exit='exit'
+            className="cover__right"></motion.div>
+                <Title variant={titleUpAnimation}>My Projects</Title>
                 <div className="projects__container">
                     <div className="projects__options">
-                        <OptionButton language={html} forHide>HTML</OptionButton>
-                        <OptionButton handler={renderCss} language={css}>CSS</OptionButton>
-                        <OptionButton handler={renderJs} language={js}>JS</OptionButton>
-                        <OptionButton handler={renderReact} language={react}>REACT</OptionButton>
-                        <OptionButton handler={renderSass} language={sass}>SASS</OptionButton>
+                        <OptionButton variant={optionLeft1ButtonAnimation} language={html} forHide>HTML</OptionButton>
+                        <OptionButton variant={optionLeftButtonAnimation} handler={renderCss} language={css}>CSS</OptionButton>
+                        <OptionButton variant={optionMiddleButtonAnimation} handler={renderJs} language={js}>JS</OptionButton>
+                        <OptionButton variant={optionRightButtonAnimation} handler={renderReact} language={react}>REACT</OptionButton>
+                        <OptionButton variant={optionRight1ButtonAnimation} handler={renderSass} language={sass}>SASS</OptionButton>
                     </div>
-                    <div className="projects__cards">
+                    <motion.div className="projects__cards">
                         {
                             filtred.map(project => {
                                 return (
                                     <Card  key={project.id} project={project}/>
-                                )
-                            })
-                        }
-                    </div>
+                                    )
+                                })
+                            }
+                    </motion.div>
                 </div>
                         <ScrollTop/>
             </motion.div>

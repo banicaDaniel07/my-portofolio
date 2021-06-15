@@ -1,11 +1,14 @@
 .title {
-  box-sizing: border-box;
-  padding: 70px 0;
-  text-align: center;
-  font-family: var(--fam-Roboto);
-  font-style: italic;
-  font-size: var(--px30);
-  font-weight: var(--weight400);
-  color: var(--orange);
-  letter-spacing: 0.2rem;
+  overflow: hidden;
+  margin: 70px 0;
+  &__content {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--fam-Roboto);
+    font-style: italic;
+    font-size: var(--px30);
+    font-weight: var(--weight400);
+    color: var(--orange);
+    letter-spacing: 0.2rem;
+  }
 }
