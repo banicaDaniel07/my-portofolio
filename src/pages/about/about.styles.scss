@@ -2,6 +2,7 @@
 .about {
   position: relative;
   &__cards {
+    overflow: hidden;
     width: 66%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

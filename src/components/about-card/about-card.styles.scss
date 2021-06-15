@@ -6,15 +6,19 @@
     height: 400px;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
 
     img {
       width: 300px;
       height: 400px;
       object-fit: cover;
+
+      transform: scale(1);
+      transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
   }
   &__overlay {
-    visibility: hidden;
     opacity: 0;
     position: absolute;
     width: 100%;
@@ -27,7 +31,6 @@
   }
 
   &__title {
-    visibility: hidden;
     opacity: 0;
     width: 100%;
     text-align: center;
@@ -38,10 +41,10 @@
     color: var(--orange);
     font-size: var(--px25);
     letter-spacing: 0.1rem;
+    transform: translateY(200px) !important;
   }
 
   &__quote {
-    visibility: hidden;
     opacity: 0;
     width: 100%;
     padding: 0 30px;
@@ -52,22 +55,32 @@
     z-index: 1;
     letter-spacing: 0.1rem;
     line-height: var(--px25);
+    transform: translateY(-200px);
   }
 }
 
+// Hover class with all the animations
 .about__card__show {
+  img {
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  }
+
   .about__overlay {
-    visibility: visible;
     opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .about__title {
+    opacity: 1;
+    transform: translateY(0) !important;
+    transition: all 0.5s ease-in-out;
   }
 
   .about__quote {
-    visibility: visible;
     opacity: 1;
-  }
-  .about__title {
-    visibility: visible;
-    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
   }
 }
 

@@ -50,6 +50,7 @@
 
   // Contact infos 3 columns grid
   &__infos {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;

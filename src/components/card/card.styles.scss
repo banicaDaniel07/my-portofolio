@@ -1,12 +1,14 @@
 @import "../../mixins.scss";
 
 .card {
+  transition: all 0.3s ease-in-out;
   position: relative;
   width: 384px;
   height: 216px;
   border-radius: 20px;
   box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
 
   img {
     width: 100%;
@@ -17,6 +19,7 @@
   }
 
   &__overlay {
+    overflow: hidden;
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -38,6 +41,7 @@
     align-items: center;
     grid-template-columns: 1fr 2fr;
     padding-bottom: 50px;
+    transition: all 0.5s ease-in-out;
   }
 
   &:hover {
@@ -64,6 +68,8 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     margin: 20px 0;
+    transform: translateX(-100px);
+    opacity: 0;
     i {
       font-size: var(--px25);
       color: var(--dark);
@@ -71,12 +77,16 @@
     }
   }
 
+  &__first {
+    transform: translateX(-200px);
+  }
+
   &__content:hover {
     background-color: var(--orange-d);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
     i {
-      color: var(--white-dark);
-      transition: all 0.2s ease-in-out;
+      color: var(--dark);
+      transition: all 0.1s ease-in-out;
     }
   }
 
@@ -87,12 +97,18 @@
     color: var(--orange);
     letter-spacing: 0.1rem;
     margin-bottom: 30px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-200px);
   }
 
   // Is or not responsive
   &__responsive {
     font-size: var(--px15);
     font-weight: var(--weight400);
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
   }
 
   // Two color for is/not
@@ -123,6 +139,9 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
   }
 
   &__html {
@@ -148,14 +167,39 @@
 }
 
 .show__card {
-  .card__overlay {
-    visibility: visible;
-    opacity: 1;
-  }
+  .card {
+    &__overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+    &__content {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+    &__responsive {
+      transform: translateX(0);
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
 
-  .card__content {
-    visibility: visible;
-    opacity: 1;
+    &__first {
+      transform: translateX(0);
+    }
+
+    &__code {
+      transform: translateY(0);
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &__name {
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+      transform: translateY(0);
+    }
   }
 }
 

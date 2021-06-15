@@ -19,12 +19,14 @@
   z-index: 1;
   cursor: pointer;
   margin-top: 20px;
+  border: none;
 
   &:hover {
     color: white;
   }
 
   &:before {
+    outline: none;
     content: "";
     display: block;
     position: absolute;

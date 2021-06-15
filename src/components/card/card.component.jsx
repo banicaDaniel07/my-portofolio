@@ -24,7 +24,7 @@ const Card = ({project}) => {
             <div className="card__overlay">
                 <div className="card__buttons">
                     <a href={website} target="_blank" rel="noreferrer">
-                        <div className="card__content">
+                        <div className="card__content card__first">
                         <i className="fas fa-globe-europe"></i>
                         </div>
                     </a>
