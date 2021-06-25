@@ -1,6 +1,7 @@
-import React from 'react'; 
+import React, { useEffect } from 'react'; 
 import {Route, Switch, useLocation} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { addDataToDatabase } from './firebase/firebase.ultils';
 
 import './App.styles.scss';
 import './mixins.scss';
@@ -13,6 +14,14 @@ import Navigation from './components/navigation/navigation.component';
 
 
 function App() {
+    useEffect(() => {
+      async function addDataToFirestore() {
+        await addDataToDatabase();
+      }
+  
+      addDataToFirestore()
+    })
+  
   const location = useLocation();
   return (
     <div className="App">
