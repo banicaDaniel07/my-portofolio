@@ -38,6 +38,12 @@ export const addDataToDatabase = async () => {
     const openedAt = new Date();
     const dayAndMonth = getDayAndMonth(openedAt);
     const openId = openedAt.getTime();
+    let openIP;
+    try {
+      openIP = await getClientIp();
+    } catch (error) {
+      openIP = "Couldn't get the IP";
+    }
 
     const openRef = firestore.doc(`${dayAndMonth}/${openId}`);
     
@@ -45,7 +51,6 @@ export const addDataToDatabase = async () => {
     
     if(!snapShot.exists){
       try {
-        const openIP = await getClientIp();
         await openRef.set({
             openIP,
             openedAt 
