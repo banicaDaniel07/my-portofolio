@@ -20,7 +20,7 @@ function App() {
       }
   
       addDataToFirestore()
-    })
+    }, [])
   
   const location = useLocation();
   return (
