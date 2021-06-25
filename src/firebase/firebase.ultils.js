@@ -38,13 +38,14 @@ export const addDataToDatabase = async () => {
     const openedAt = new Date();
     const dayAndMonth = getDayAndMonth(openedAt);
     const openId = openedAt.getTime();
-    const openIP = await getClientIp();
+
     const openRef = firestore.doc(`${dayAndMonth}/${openId}`);
-  
+    
     const snapShot = await openRef.get();
     
     if(!snapShot.exists){
       try {
+        const openIP = await getClientIp();
         await openRef.set({
             openIP,
             openedAt 
