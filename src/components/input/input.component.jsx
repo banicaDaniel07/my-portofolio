@@ -7,8 +7,8 @@ const Input = ({type, name, children, textarea}) => {
         <div className='input'>
             {
                 !textarea ? 
-                (<input className="input__type" type={type} name={name} placeholder={children}></input>) :
-                (<textarea className="input__type" name={name} placeholder={children}></textarea>)
+                (<input className="input__type" type={type} name={name} placeholder={children} required></input>) :
+                (<textarea className="input__type" name={name} placeholder={children} required></textarea>)
             }
             <span className='input__span'></span>
         </div>
